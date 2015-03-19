@@ -7,10 +7,10 @@ A Dockerfile that produces a Docker Image for [Logstash](logstash.net) and [Elas
 
 ### Build the image
 
-To create the image `lnguyen/el`, execute the following command on the `elk` folder:
+To create the image `lnguyen/logstash`, execute the following command on the `logstash` folder:
 
 ```
-$ docker build -t lnguyen/el .
+$ docker build -t lnguyen/logstash .
 ```
 
 ### Run the image
@@ -18,5 +18,5 @@ $ docker build -t lnguyen/el .
 To run the image and bind to host port 514, 9200, 9300:
 
 ```
-$ docker run -d --name el -p 514:514 -p 9200:9200 -p 9300:9300 lnguyen/el
+$ docker run -d --name logstash -p 514:514 -p 9200:9200 -p 9300:9300 lnguyen/logstash
 ```
